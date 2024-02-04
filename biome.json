@@ -1,0 +1,52 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.2/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"files": {
+		"maxSize": 15728640,
+		"ignore": [
+			".next/**/*",
+			"node_modules/**/*",
+			"dist/**/*",
+			"out/**/*",
+			"build/**/*",
+			"public/**/*",
+			"coverage/**/*",
+			"/zzzz_test",
+			".github/**/*"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": true,
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 120,
+		"lineEnding": "lf",
+		"ignore": []
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+
+			"style": {
+				"noNonNullAssertion": "warn",
+				"noUnusedTemplateLiteral": "warn"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn",
+				"noArrayIndexKey": "off"
+			},
+
+			"a11y": {
+				"useButtonType": "off",
+				"useKeyWithClickEvents": "warn"
+			}
+		}
+	}
+}
