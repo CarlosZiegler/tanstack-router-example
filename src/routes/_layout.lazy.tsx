@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { Link, Outlet, createLazyFileRoute } from "@tanstack/react-router";
 
 export const Route = createLazyFileRoute("/_layout")({
@@ -25,6 +26,7 @@ function LayoutComponent() {
         >
           Layout B
         </Link>
+        <ModeToggle />
       </div>
       <div>
         <Outlet />

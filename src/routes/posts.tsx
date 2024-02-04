@@ -9,8 +9,7 @@ export const Route = createFileRoute("/posts")({
 });
 
 function PostsComponent() {
-  const postsQuery = useSuspenseQuery(postsQueryOptions);
-  const posts = postsQuery.data;
+  const { data: posts } = useSuspenseQuery(postsQueryOptions);
 
   return (
     <div className="p-2 flex gap-2">
